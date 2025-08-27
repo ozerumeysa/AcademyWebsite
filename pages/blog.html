@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add your Post</title>
+    <script src="../assets/jscript/blog.js" defer></script>
+
+
+</head>
+<body style="background-color: blanchedalmond;">
+
+<nav style="text-align: center; background-image: url(../assets/images/post.jpg);">
+  <div style="text-align: right;">
+    <input type="checkbox" name="hidemode" id="darkToggle" onclick="darkMode()">
+    Enable Dark Mode
+    <br><br><a href="../index.html">
+  <button style="background-color: chartreuse;" type="button">HOME</button>
+</a>
+  </div>
+<nav>
+
+<form onsubmit="return analyseForm()">
+
+    <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson;">Enter Your Post: </h2>
+    <label for="titleInput">Title:</label><br>
+    <input type="text" id="titleInput" placeholder="Enter title"><br><br>
+
+    <label for="authorInput">Author:</label><br>
+    <input type="text" id="authorInput" placeholder="Enter author name"><br><br>
+
+    <label for="inputImage">Image URL:</label><br>
+    <input type="url" id="inputImage" placeholder="Paste image URL"><br><br>
+
+    <label for="textInput">Post Content:</label><br>
+    <textarea id="textInput" placeholder="Write your post here" rows="5" cols="40"></textarea><br><br>
+    <button type="button" onclick="areYouSure()">Save</button>
+    <input type="submit" name="submitForm" value="Submit">
+
+    <p id="edit_p">Are you sure to submit?</p>
+
+    <button style="text-align: right;" onclick="addPost()">Post</button><br><br>
+</form>
+
+<div id="blogList"></div>
+
+<script src="../assets/jscript/blog.js"></script>
+   
+
+</body>
+</html>

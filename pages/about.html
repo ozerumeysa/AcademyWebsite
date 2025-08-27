@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script type="text/javascript" src="../assets/jscript/about.js"></script>
+
+      <style>
+    .imageBlog {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .imageBlog img {
+      width: 200px;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+</head>
+<body style="background-color: bisque; text-align: center;">
+
+    <div style="text-align: right;">
+    <input type="checkbox" name="hidemode" id="darkToggle" onclick="darkMode()">
+    Enable Dark Mode
+  </div>
+    <h2 style="color:darkred;">Description</h2>
+    <p style="color:darkslateblue; text-align: center;">This website is a simple blog where I share my thoughts, ideas, and stories. You can read posts, learn new things, and get updates from me. Feel free to contact me anytime using the contact form!</p>
+
+    <div class="imageBlog">    
+    <img src="../assets/images/blog.jpg" alt="Photo of blog" width="400">
+    <img src="../assets/images/blog1.jpg" alt="photo of blog">
+    <img src="../assets/images/blog2.jpg" alt="photo of blog">
+    <img src="../assets/images/blog3.jpg" alt="photo of blog">
+    <img src="../assets/images/blog3.jpg" alt="photo of blog">
+    <img src="../assets/images/blog4.jpg" alt="photo of blog">
+    <img src="../assets/images/blog5.jpg" alt="photo of blog">
+    <img src="../assets/images/blog6.jpg" alt="photo of blog">
+    </div>
+<a href="../index.html">
+  <button style="background-color: chartreuse;" type="button">HOME</button>
+</a>
+
+    <br><input onclick="hideUnhide()" type="checkbox" id="display" name="display_text" value="" checked>
+    <label for="display_text">Uncheck to hide text!!</label>
+    <p id="edit_p1">mail: myblog@gmail.com</p>
+</body>
+</html>
